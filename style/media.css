@@ -1,0 +1,23 @@
+@media (max-width: 900px) {
+    .navigation-menu .menu-list {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+}
+
+@media (min-width: 900px) {
+    .hamburger-menu-list {
+        right: -100%;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .navigation-menu .logo a {
+        display: none;
+    }
+}
