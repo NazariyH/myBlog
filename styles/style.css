@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@100&display=swap');
-
-
 /* Defaults option */
 * {
-    padding: 0;
-    margin: 0;
-
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-weight: normal;
+    font-family: 'Comfortaa', cursive;
+}
 
-    color: #FFFFFF;
-    font-family: 'Comfortaa';
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 
@@ -40,15 +39,16 @@
 
     width: 45px;
     height: 45px;
-    margin: 0 20px 0 50px;
+    margin: 0 20px 0 30px;
 }
 
 .navigation-menu .logo a {
     font-size: 30px;
+    color: #FFFFFF;
 }
 
 .navigation-menu .menu-list {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .menu-list a,
@@ -57,6 +57,7 @@
 
     font-size: 20px;
     margin: 0 15px;
+    color: #FFFFFF;
 }
 
 .navigation-menu .menu-list a::before,
@@ -79,7 +80,7 @@
 }
 
 /* Hamburger menu */
-.hamburger-btn {
+.menu-hamburger {
     display: none;
 }
 
@@ -92,7 +93,6 @@
 
     cursor: pointer;
 }
-
 
 .hamburger-btn span {
     position: absolute;
@@ -151,4 +151,60 @@
 .active-menu-btn span:nth-child(3) {
     top: 50%;
     transform: rotate(45deg);
+}
+
+/* Section */
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+section.dark-fon {
+    background-color: #2C2C2C;
+}
+
+section.light-fon {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    min-height: 480px;
+
+    color: #000000;
+}
+
+footer .contacts {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+}
+
+
+/* Social image */
+.contacts .social a img {
+    width: 40px;
+    height: 40px;
+
+    margin-right: 20px;
+    transition: all .3s ease-out;
+}
+
+.contacts .social a img:hover {
+    transform: scale(1.17);
+}
+
+
+/* Gmail */
+.contacts h2 {
+    font-size: 20px;
+    margin: 20px 0 5px 0;
 }
