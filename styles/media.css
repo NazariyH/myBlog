@@ -32,3 +32,14 @@
         width: 100vw;
     }
 }
+
+@media (max-width: 1000px) {
+    .items {
+        flex-direction: column;
+    }
+
+    .dots {
+        bottom: 50px;
+    }
+    
+}
