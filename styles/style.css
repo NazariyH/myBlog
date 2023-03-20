@@ -5,6 +5,8 @@
     list-style: none;
     font-weight: normal;
     font-family: 'Comfortaa', cursive;
+
+    transition: all .5s ease-out;
 }
 
 body {
@@ -17,6 +19,7 @@ body {
 /* Navigation menu */
 .navigation-menu {
     position: fixed;
+    z-index: 10;
 
     display: flex;
     justify-content: space-between;
@@ -169,6 +172,129 @@ section.light-fon {
     color: #000000;
 }
 
+
+/* Slider */
+
+.wrap-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.wrap-slider .slides {
+    display: flex;
+
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.items {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    padding: 100px 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.items img {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.items .filter {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);;
+}
+
+
+.items .description h1 {
+    max-width: 800px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.items .description p {
+    font-size: 20px;
+    max-width: 700px;
+    color: #FFFFFF;
+}
+
+.items .project-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.project-link button {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    transition: all .5s ease-out;
+    
+}
+
+.project-link button a {
+    color: #FFFFFF;
+}
+
+.project-link button:hover {
+    background-color: #FFFFFF;
+}
+
+.project-link button:hover > a {
+    color: #000000;
+}
+
+.dots {
+    display: flex;
+
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+}
+
+.dots span {
+    height: 3px;
+    width: 30px;
+
+    background-color: #FFFFFF;
+    margin: 0 10px;
+    transition: all .5s ease-out;
+}
+
+.dots span:hover {
+    background-color: #C1C1C1;
+}
+
+.dots .dots-active {
+    background-color: #C1C1C1;
+    transform: translateY(-10px);
+}
 
 /* Footer */
 footer {
