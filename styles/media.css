@@ -6,6 +6,14 @@
     .menu-hamburger {
         display: block;
     }
+
+    .dark-fon::before,
+    .dark-fon::after,
+    .light-fon::before,
+    .light-fon::after {
+        max-width: 500px;
+        max-height: 500px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -42,4 +50,14 @@
         bottom: 50px;
     }
     
+}
+
+@media (max-width: 1400px) {
+    .dark-fon::before,
+    .dark-fon::after,
+    .light-fon::before,
+    .light-fon::after {
+        width: 600px;
+        height: 600px;
+    }
 }
