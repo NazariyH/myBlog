@@ -30,7 +30,7 @@
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1230px) {
     footer {
         flex-direction: column;
         align-items: flex-start;
@@ -59,5 +59,15 @@
     .light-fon::after {
         width: 600px;
         height: 600px;
+    }
+
+    section:nth-child(3) {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .my-image {
+        width: 95%;
     }
 }
