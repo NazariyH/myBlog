@@ -161,8 +161,11 @@ body {
 /* Section */
 
 section {
+    position: relative;
+
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 section.dark-fon {
@@ -172,6 +175,49 @@ section.dark-fon {
 section.light-fon {
     background-color: #FFFFFF;
     color: #000000;
+}
+
+/* Decorative elements */
+
+.dark-fon::before,
+.dark-fon::after,
+.light-fon::before,
+.light-fon::after {
+    position: absolute;
+    z-index: 1;
+
+    width: 800px;
+    height: 800px;
+
+    border-radius: 50%;
+    background-color: #474747;
+
+    content: "";
+}
+
+.light-fon::before,
+.light-fon::after {
+    background-color: #EBEBEB;
+}
+
+.dark-fon::before {
+    bottom: -10%;
+    left: -10%;
+}
+
+.dark-fon::after {
+    right: -10%;
+    top: -10%;
+}
+
+.light-fon::before {
+    top: -10%;
+    left: -10%;
+}
+
+.light-fon::after {
+    right: -10%;
+    bottom: -10%;
 }
 
 
