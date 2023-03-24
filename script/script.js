@@ -14,7 +14,7 @@ let width = 0;  // Get screen width
 window.addEventListener("resize", function() {
     let width = screen.width;  // Get screen width
     
-    if (width > 900) {
+    if (width > 950) {
         menuBtn.classList.remove("active-menu-btn");  // Remove new class
         menuList.classList.remove("active-menu-list");  // Remove new class
     }
