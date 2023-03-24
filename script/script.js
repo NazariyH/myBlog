@@ -28,7 +28,7 @@ const sliders = document.querySelectorAll(".items");  // All slides
 let count = 0;  // Count slides
 
 const dots = document.querySelectorAll(".dots-row");  // Dots
-const speedMove = 3000;  // Slider speed 
+const speedMove = 9000;  // Slider speed 
 
 
 function slideMove(count) {
