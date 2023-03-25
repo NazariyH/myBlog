@@ -393,6 +393,40 @@ section:nth-child(2) {
     color: #FFFFFF;
 }
 
+/* My plans section */
+section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 100px 5%;
+}
+
+.plan-wrap,
+.plan-wrap .plan-wrap-double  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan-wrap .plan-wrap-double .plan-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.plan-wrap .plan-wrap-double .plan-item img {
+    width: 300px;
+    height: 420px;
+}
+
+.plan-wrap .plan-wrap-double .plan-item p {
+    max-width: 300px;
+}
+
 /* Footer */
 footer {
     display: flex;
