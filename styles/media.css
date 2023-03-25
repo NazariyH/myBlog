@@ -14,6 +14,15 @@
         max-width: 500px;
         max-height: 500px;
     }
+
+    .wrap-skill {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrap-skill .soft-item:nth-child(1) {
+        margin-top: 50px;
+    }
 }
 
 @media (min-width: 950px) {
